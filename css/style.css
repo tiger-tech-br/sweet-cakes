@@ -80,7 +80,7 @@ body{
 
 .hero h1{
 
-    font-size:4.5rem;
+    font-size: 2.4rem;
 
     max-width:800px;
 
@@ -195,6 +195,54 @@ body{
 
     padding:0 20px 20px;
 
+}
+
+.review-card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+    position:relative;
+}
+
+.review-card:hover{
+    transform:translateY(-10px);
+}
+
+.review-card::before{
+    content:"❝";
+    position:absolute;
+    top:10px;
+    left:20px;
+
+    font-size:3rem;
+    color:var(--pink);
+
+    opacity:.3;
+}
+
+.review-card p{
+    margin-top:15px;
+    color:var(--brown);
+    font-style:italic;
+    line-height:1.7;
+}
+
+.review-card h4{
+    margin-top:20px;
+    color:var(--rose);
+    font-size:1rem;
+}
+
+.review-stars{
+    color:#ffc107;
+    font-size:1.3rem;
+    letter-spacing:2px;
 }
 
 .gallery-grid img{
@@ -315,7 +363,7 @@ body{
     }
 
     .hero h1{
-        font-size:2.4rem;
+        font-size: 1.6rem;
     }
 
     .hero p{
