@@ -12,6 +12,11 @@
     box-sizing:border-box;
 }
 
+html,
+body{
+    overflow-x:hidden;
+}
+
 body{
     font-family:"Poppins",sans-serif;
     background:var(--cream);
@@ -328,6 +333,10 @@ body{
 
 @media(max-width:768px){
 
+    .header .container{
+    padding:0 20px;
+    }
+
     .menu-toggle{
         display:block;
         font-size:1.8rem;
@@ -380,8 +389,9 @@ body{
         grid-template-columns:1fr;
     }
 
-    .whatsapp {
-        margin-bottom: 20px;
+    .whatsapp{
+        right:25px;
+        bottom:25px;
     }
 
 }
